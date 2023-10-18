@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #111d2a;
+    height: 4.5rem;
+}
+
+header nav img {
+    width: 150px;
+    height: 65px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color:  rgb(255, 176, 29);
+    transition: 0.3s;
+}
+
+header nav button {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(228, 228, 228);
+    font-size: 14px;
+}
+
+header nav button:hover {
+    background-color:  #111d2a;
+    color: #eeeeee;
+    transition: 0.3s ease-in-out;
+}
+
+header nav button a {
+    text-decoration: none;
+    color: #111d2a;
+}
+
+header nav button a:hover {
+    color: #eeeeee;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111d2a;
+    min-width: 500px;
+    max-width: 500px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 15px;
+}
+
+.dropdown-content div a {
+    margin: 0 5px 0 0;
+    width: max-content;
+}
+
+.dropdown-content div {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.dropdown-content img {
+    max-width: 100%;
+}
+
+.all-contents {
+    margin: 0rem 5rem;
+}
+
+/* homepage */
+
+.child-cont {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/mount.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-mother {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-cont {
+    width: 80%;
+    margin-bottom: 10rem;
+}
+
+
+.main-cont h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #eeeeee;
+}
+
+.main-cont p {
+    color: #eeeeee;
+    width: 50%;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.main-cont button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    background: none;
+    color: #eeeeee;
+}
+
+.main-cont button:hover {
+    background-color: #111d2a;
+    transition: 0.3s;
+    color: #eeeeee;
+    border: 1px solid #111d2a;
+}
+
+/* Supporting page */
+.supporting {
+    height: 170vh;
+    width: fit-content;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1 {
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons-list li {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.reasons-list li:hover {
+    transform: scale(1.05);
+    background: #f1f1f1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.paragraph-box {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* location  */
+
+
+#location {
+    height: 60vh;
+    width: 100%;
+}
+
+.location-iframe {
+    height: 100%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+/* footer */
+
+footer {
+    height: 50vh;
+    width: 100%;
+    background-color: #111d2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eeeeee;
+}
+
+.footer-contents h3 {
+    color:  rgb(255, 176, 29);
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transition: 0.5s;
+}
+
+.footer-contents p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.footer-contents li {
+    font-size: 14px;
+}
+.footer-title {
+    width: 20%;
+}
+
+.footer-title p {
+    line-height: 1.3rem;
+}
+
+.visit {
+    width: 20%;
+
+}
+
+.visit p {
+    line-height: 1.3rem;
+}
+
+.inputs {
+    margin: 0;
+}
+
+.inputs input {
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    background: none;
+    border: solid 1px #eeeeee;
+    color: #eeeeee;
+}
+
+.inputs button {
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    border: solid 1px #eeeeee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inputs button:hover {
+    background-color: #111d2a;
+    border: solid 1px  #eeeeee;
+    transition: 0.3s;
+}
+
+::placeholder {
+    color: #eeeeee;
+    opacity: 1;
+    font-family: 'Poppins';
+  }
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #eeeeee;
+    font-family: 'Poppins';
+  }
+
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact ul li {
+    margin: 0 0 5px 0;
+  }
+
+  .contact ul li a {
+    text-decoration: none;
+    color: #eeeeee;
+    transition: 0.3s;
+  }
+
+  .contact ul li a:hover {
+    color: rgb(255, 176, 29);
+    transition: 0.3s;
+  }
+
+  .contact button svg {
+    color: rgb(255, 176, 29);
+  }
+
+/* license */
+
+.lis {
+    height: 10vh;
+    background-color: #111d2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeeeee;
+    border-top: 1px solid #b7b7b7;
+}
+
+@media only screen and (max-width: 888px) {
+    /* about */
+    
+    /* footer */
+
+    footer {
+        height: 80vh;
+    }
+
+    .footer-contents {
+        display: inline-block;
+        margin-left: 5rem;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .footer-title {
+        width: 80%;
+    }
+
+    .visit {
+        width: 80%;
+    }
+}

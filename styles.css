@@ -204,7 +204,7 @@ header nav button a:hover {
 
 .card-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -551,11 +551,11 @@ footer {
 
 /* Homepage responsiveness */
 
-@media only screen and (max-width: 1420px) {
-    /* about */
+@media only screen and (max-width: 1190px) {
 
     #tourist-spots {
-        height: 200vh;
+        height: fit-content;
+        margin: 5rem;
         transition: 0.5s;
 
     }
@@ -572,12 +572,12 @@ footer {
     /* footer */
 
     footer {
-        height: 80vh;
+        height: fit-content;
     }
 
     .footer-contents {
         display: inline-block;
-        margin-left: 5rem;
+        margin: 3rem;
         transition: 0.5s;
         height: 100%;
     }
@@ -588,5 +588,23 @@ footer {
 
     .visit {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img1 img {
+        display: none;
+        transition: 0.3s;
+    }
+
+    .img2 img {
+        display: none;
+        transition: 0.3s;
     }
 }

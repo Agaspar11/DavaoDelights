@@ -42,3 +42,12 @@ const inputElement = document.querySelector(".inputs input");
 
     inputElement.value = "";
   });
+
+
+  // JavaScript to add responsive behavior to the existing navigation
+const burgerMenu = document.querySelector('.burger-menu');
+const nav = document.querySelector('nav ul');
+
+burgerMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});

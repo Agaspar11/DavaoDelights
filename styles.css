@@ -567,7 +567,6 @@ footer {
 }
 
 @media only screen and (max-width: 888px) {
-    /* about */
     
     /* footer */
 
@@ -592,8 +591,19 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    nav {
-        display: none;
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav {
+        height: 9rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        text-align: left;
     }
 }
 

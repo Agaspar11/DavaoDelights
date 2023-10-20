@@ -352,18 +352,32 @@ footer {
     border-top: 1px solid #b7b7b7;
 }
 
+@media only screen and (max-width: 1190px) {
+
+    #tourist-spots {
+        height: fit-content;
+        margin: 5rem;
+        transition: 0.5s;
+
+    }
+
+    .card-list {
+        height: fit-content;
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 888px) {
-    /* about */
     
     /* footer */
 
     footer {
-        height: 80vh;
+        height: fit-content;
     }
 
     .footer-contents {
         display: inline-block;
-        margin-left: 5rem;
+        margin: 3rem;
         transition: 0.5s;
         height: 100%;
     }
@@ -374,5 +388,34 @@ footer {
 
     .visit {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav {
+        height: 9rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img1 img {
+        display: none;
+        transition: 0.3s;
+    }
+
+    .img2 img {
+        display: none;
+        transition: 0.3s;
     }
 }

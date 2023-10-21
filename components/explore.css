@@ -276,18 +276,16 @@ footer {
     border-top: 1px solid #b7b7b7;
 }
 
-@media only screen and (max-width: 1190px) {
-
-    #tourist-spots {
-        height: fit-content;
-        margin: 5rem;
-        transition: 0.5s;
-
-    }
-
-    .card-list {
-        height: fit-content;
+@media only screen and (max-width: 1100px) {
+    .grid-container {
         display: block;
+        transition: 0.03s;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    .grid-container {
+        transition: 0.03s;
     }
 }
 

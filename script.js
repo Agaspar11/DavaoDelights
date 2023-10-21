@@ -34,7 +34,7 @@ const inputElement = document.querySelector(".inputs input");
     event.preventDefault();
     const inputValue = inputElement.value;
 
-    if (inputValue.includes("@")) {
+    if (inputValue.includes("@gmail.com")) {
       alert("You've subscribed with the email address: " + inputValue + ". You will be updated on our latest posts.");
     } else {
       alert("You've enter an invalid email, please input the valid email using 'example.user@gmail.com'");
@@ -43,11 +43,3 @@ const inputElement = document.querySelector(".inputs input");
     inputElement.value = "";
   });
 
-
-  // JavaScript to add responsive behavior to the existing navigation
-const burgerMenu = document.querySelector('.burger-menu');
-const nav = document.querySelector('nav ul');
-
-burgerMenu.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});

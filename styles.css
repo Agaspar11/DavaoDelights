@@ -390,7 +390,7 @@ header nav button a:hover {
 .container textarea {
     border: 1px solid #ccc;
     margin-bottom: 15px;
-    max-width: 450px;
+    max-width: 445px;
 }
 
 .container input[type="submit"] {

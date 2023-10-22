@@ -172,7 +172,9 @@ header nav button a:hover {
 
 /* Supporting page */
 .supporting {
-    height: 175vh;
+    margin: 10px;
+    height: fit-content;
+    width: fit-content;
 }
 
 .container {

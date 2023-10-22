@@ -286,15 +286,24 @@ footer {
 }
 
 .inputs input {
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px 0px 0px 5px;
     background: none;
     border: solid 1px #eeeeee;
     color: #eeeeee;
 }
 
+.icons svg {
+    border: 1px solid #eeeeee;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 50px;
+    color: #eeeeee;
+  }
+
 .inputs button {
-    padding: 10px;
+    padding: 15px;
     border-radius: 0px 5px 5px 0px;
     margin-left: -5px;
     border: solid 1px #eeeeee;
